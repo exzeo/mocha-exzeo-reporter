@@ -1,6 +1,6 @@
 {
   "name": "mocha-exzeo-reporter",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "A mocha reporter that uses both junit and spec reporter.",
   "main": "index.js",
   "scripts": {
