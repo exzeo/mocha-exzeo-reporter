@@ -12,12 +12,13 @@ jobs:
     # Setup .npmrc file to publish to npm
     - uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '18.x'
         registry-url: 'https://registry.npmjs.org'
 
     - name: npm install
       run: npm install
 
     - run: npm publish
+      if: github.ref == 'refs/heads/master'
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}        
