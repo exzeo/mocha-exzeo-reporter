@@ -1,4 +1,4 @@
-'use-strict';
+'use strict';
 
 var Spec = require('mocha').reporters.Spec;
 var JUnit = require('mocha-junit-reporter');
